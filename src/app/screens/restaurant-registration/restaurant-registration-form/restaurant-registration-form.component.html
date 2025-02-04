@@ -1,0 +1,38 @@
+<div class="outer">
+  <div class="form-container">
+    <div style="font-weight: bold; font-size: larger;">Restaurant Registration Form</div>
+    <form [formGroup]="restaurantForm" (ngSubmit)="onSubmit()">
+      <label for="name">Restaurant Name:</label>
+      <input id="name" type="text" formControlName="name">
+
+      <label for="ownerName">Owner Name:</label>
+      <input id="ownerName" type="text" formControlName="ownerName">
+
+      <label for="address">Address:</label>
+      <input id="address" type="text" formControlName="address">
+
+      <label for="city">City:</label>
+      <input id="city" type="text" formControlName="city">
+
+      <label for="state">State:</label>
+      <input id="state" type="text" formControlName="state">
+
+      <label for="zipcode">Zip Code:</label>
+      <input id="zipcode" type="number" formControlName="zipcode">
+
+      <label for="cuisine">Cuisine:</label>
+      <input id="cuisine" type="text" formControlName="cuisine">
+
+      <label for="contactNumber">Contact Number:</label>
+      <input id="contactNumber" type="number" formControlName="contactNumber">
+
+      <label for="ownerEmail">Owner Email:</label>
+      <input id="ownerEmail" type="email" formControlName="ownerEmail">
+
+      <label for="password">Password:</label>
+      <input id="password" type="password" formControlName="password">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
