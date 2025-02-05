@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GetRestaurantsComponent } from './screens/fetch-restaurants/get-restaurants/get-restaurants.component';
 
+// import { SharedModule } from './shared/shared.module'; //Why do i have to do this
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { GetRestaurantsComponent } from './screens/fetch-restaurants/get-restaur
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    // SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
