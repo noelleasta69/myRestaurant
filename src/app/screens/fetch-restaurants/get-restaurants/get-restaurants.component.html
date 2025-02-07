@@ -10,15 +10,15 @@
       <p>{{ restaurant.cuisine }}</p>
     </li>
   </ul>
-</div> -->
-
+</div>
+ -->
 
 
  <h1>List of Restaurants ...</h1>
  <div class="restaurants-container">
    <h2>Restaurants List</h2>
    <div *ngFor="let restaurant of restaurants">
-     <app-restaurant-card [restaurant]="restaurant"></app-restaurant-card>
+     <app-restaurant-card [restaurant]="restaurant" (removeCardEvent)="removeResto($event)"></app-restaurant-card>
    </div>
  </div>
  

@@ -1,4 +1,6 @@
 .restaurant-card {
+    display: flex;
+    justify-content: space-between;
     border: 1px solid #ccc;
     padding: 16px;
     margin-bottom: 16px;
@@ -17,3 +19,8 @@
     margin: 4px 0;
   }
   
+  .cancel {
+    color: white;
+    background-color: orange;
+    border-radius: 20%;
+  }

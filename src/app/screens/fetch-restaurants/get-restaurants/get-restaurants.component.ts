@@ -29,6 +29,12 @@ export class GetRestaurantsComponent {
       }
     });
   }
+
+  removeResto($event: string) {
+    this.restaurants = this.restaurants.filter(restaurant => restaurant.name !== $event);
+    console.log("Updated restaurant list:", this.restaurants);
+  }
+  
 }
 
 

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-restaurant-card',
@@ -8,4 +8,10 @@ import { Component, Input } from '@angular/core';
 
 export class RestaurantCardComponent {
   @Input() restaurant: any;  
+  @Output() removeCardEvent = new EventEmitter<string>();
+
+  removeElement(restaurantName: string) {
+    console.log(restaurantName);
+    this.removeCardEvent.emit(restaurantName);
+  }
 }
