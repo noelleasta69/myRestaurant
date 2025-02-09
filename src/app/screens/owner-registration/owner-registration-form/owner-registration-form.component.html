@@ -1,0 +1,38 @@
+<div class="outer">
+  <div class="form-container">
+    <div style="font-weight: bold; font-size: larger;">Owner form</div>
+    <form [formGroup]="ownerForm" (ngSubmit)="onSubmit()">
+      <label for="ownerFirstName">First Name:</label>
+      <input  id="ownerFirstName" type="text" [formControl]="ownerForm.controls.ownerFirstName">
+
+      <label for="ownerMiddleName">Middle Name:</label>
+      <input require id="ownerMiddleName" type="text" formControlName="ownerMiddleName">
+
+      <label for="ownerLastName">Last Name:</label>
+      <input require id="ownerLastName" type="text" formControlName="ownerLastName">
+
+      <label for="countryCode">Country Code:</label>
+      <input require id="countryCode" type="text" formControlName="countryCode">
+
+      <label for="ownerMobileNumber">Mobile Number:</label>
+      <input require id="ownerMobileNumber" type="number" min="1000000000" max="9999999999" formControlName="ownerMobileNumber">
+
+      <label for="ownerEmail">Owner Email:</label>
+      <input require id="ownerEmail" type="email" formControlName="ownerEmail">
+
+      <label for="governmentIdType">Government ID Type:</label>
+      <select id="governmentIdType" required formControlName="governmentIdType">
+        <option value="pancard">Pancard</option>
+        <option value="aadharcard">Aadhar Card</option>
+      </select>
+
+      <label for="governmentId">Government ID:</label>
+      <input id="governmentId" type="text" formControlName="governmentId">
+
+      <label for="password">Password:</label>
+      <input id="password" type="password" formControlName="password">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>

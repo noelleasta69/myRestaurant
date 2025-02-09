@@ -1,0 +1,13 @@
+<div class="restaurant-card">
+    <div>
+      <h3>{{ restaurant.name }}</h3>
+      <p><strong>Type:</strong> {{ restaurant.type }}</p>
+      <p><strong>Mobile:</strong> {{ restaurant.mobile }}</p>
+      <p><strong>Location:</strong> {{ restaurant.city }}, {{ restaurant.state }}</p>
+      <p><strong>Cuisine:</strong> {{ restaurant.cuisine }}</p>
+    </div>
+    <div>
+      <button (click)="removeElement(restaurant.name)"  class="cancel">X</button>
+    </div>
+</div>
+  

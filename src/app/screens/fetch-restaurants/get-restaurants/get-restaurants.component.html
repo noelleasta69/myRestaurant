@@ -1,0 +1,24 @@
+<!-- <h1>List of Restaurants ... .</h1>
+<div class="restaurants-container">
+  <h2>Restaurants List</h2>
+  <ul>
+    <li *ngFor="let restaurant of restaurants">
+      <p><strong>{{ restaurant.name }}</strong></p>
+      <p> {{restaurant.type}} </p>
+      <p> {{restaurant.mobile}} </p>
+      <div> {{restaurant.city}} ,  {{restaurant.state}} </div>
+      <p>{{ restaurant.cuisine }}</p>
+    </li>
+  </ul>
+</div>
+ -->
+
+
+ <h1>List of Restaurants ...</h1>
+ <div class="restaurants-container">
+   <h2>Restaurants List</h2>
+   <div *ngFor="let restaurant of restaurants">
+     <app-restaurant-card [restaurant]="restaurant" (removeCardEvent)="removeResto($event)"></app-restaurant-card>
+   </div>
+ </div>
+ 
